@@ -10,7 +10,7 @@ jobs:
         - uses: actions/checkout@v3
 
         - name: Deploy to S3
-          uses: razzkumar/pr-automation-with-s3@v1.0.2
+          uses: docker://lashca/my-s3-deploy-action:latest
           with:
             folder: build
             bucket: ${{ secrets.S3_BUCKET }}
