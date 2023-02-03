@@ -9,8 +9,8 @@ jobs:
     steps:
         - uses: actions/checkout@v3
 
-        - name: Deploy
-          uses: reggionick/s3-deploy@v3.2
+        - name: Deploy to S3
+          uses: aws-actions/aws-s3-deploy@v1
           with:
             folder: build
             bucket: ${{ secrets.S3_BUCKET }}
