@@ -10,7 +10,7 @@ jobs:
         - uses: actions/checkout@v3
 
         - name: Deploy to S3
-          uses: stcalica/s3-upload@master
+          uses: razzkumar/pr-automation-with-s3@v1.0.2
           with:
             folder: build
             bucket: ${{ secrets.S3_BUCKET }}
