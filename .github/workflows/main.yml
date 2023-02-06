@@ -1,6 +1,6 @@
 name: Upload Website
 
-on:[repository_dispatch]
+on: [repository_dispatch]
 
 jobs:
   deploy:
